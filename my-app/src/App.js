@@ -10,6 +10,7 @@ import TableServer from "./components/TableServer";
 import EditServer from "./pages/EditServer";
 import { gapi } from 'gapi-script';
 import Loginbutton from "./pages/Login";
+import AdminPage from "./pages/admin";
 
 const clientId = "372761498123-6qftof5rn1oncipd0sb0jn8o57mjrf1r.apps.googleusercontent.com";
 
@@ -30,7 +31,7 @@ const App = () => {
     gapi.load('client', start);
   }, []);
   return (
-    <>
+    
       <Router>
 
       <Route exact path="/">
@@ -40,12 +41,12 @@ const App = () => {
         <Route exact path="/home" component={HomePage} />
         <Route exact path="/scheduler" component={Scheduler} />
         <Route path="/contact_us" component={Contact} />
-        <Route path="/configure" component={Config} />
+        <Route path="/configure" component={AdminPage} />
         <Route path="/editControl/:id" component={Edit} />
         <Route path="/editServer/:id" component={EditServer} />
       </Router>
       
-    </>
+    
 
     
   );

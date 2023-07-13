@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "sap-it-react",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5000",
@@ -19,7 +19,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^4.6.2",
     "dayjs": "^1.11.8",
     "framer-motion": "^10.12.18",
     "gapi-script": "^1.2.0",

@@ -34,7 +34,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 const TableControl = ({ table1Data, deleteControl }) => {
   return (
-    <>
+    <div>
       <TableContainer
         component={Paper}
         style={{ border: "0px solid red", width: "900px", margin: "auto" }}
@@ -94,7 +94,7 @@ const TableControl = ({ table1Data, deleteControl }) => {
           </TableBody>
         </Table>
       </TableContainer>
-    </>
+    </div>
   );
 };
 
